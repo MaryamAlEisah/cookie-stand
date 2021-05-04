@@ -1,6 +1,6 @@
-# Lab-06: cookie-stand
 
-##LAB - 06
+
+## LAB - 06:
 # Project Name: Salmon Cookies
 
 ### Author: Maryam Al-Eisah
@@ -19,9 +19,13 @@ Pat needs you to take a leading role in doing the design work and construction o
 
 
 
-# Lab-07: Lab: Salmon Cookies Pt. 2
+## Lab-07: 
 
-Problem Domain
+# Project Name: Salmon Cookies Pt. 2
+
+### Author: Maryam Al-Eisah
+
+### Problem Domain
 Pat’s Salmon Cookies problem domain can be found here!
 
 Instructions
@@ -32,3 +36,7 @@ Replace all of your object literals for the salmon cookie stand with a single co
 Replace the lists of your data for each store and build a single table of data instead. It should look similar to the following:
 
 Display each stores data in a table format similar to what is below. Break each column by the hour and complete each row with a “Daily Location Total”.
+
+Each cookie stand location should have a separate render() method that creates and appends its row to the table
+The header row and footer row are each created in their own stand-alone function
+NOTE: Please use a header cell for both the header row ( containing store hours ), and the footer row ( hourly and grand totals across all stores ).
