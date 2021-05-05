@@ -44,3 +44,7 @@ top:0;
 left:0;
 }
 
+
+table, th, td {
+  border: 1px solid rgb(218, 20, 135);
+}

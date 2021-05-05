@@ -15,6 +15,10 @@ let locations = [];
     this.minCustPerHour=minCustPerHour;
     this.maxCustPerHour=maxCustPerHour;
     this.avgCookiesPerCust= avgCookiesPerCust;
+
+    this.custPerHour=[];
+    this.cookiesPerHour=[];
+    this.totalCookiesPerDay=0;
      
 
     // pushing the created objects
@@ -47,9 +51,51 @@ lima.Locations();
 console.log(locations );
 // for loop , array locations
 
-for (let i = 0; i < locations.length; i++) {
-    console.log(locations[i].locationName);
-    console.log(locations[i].minCustPerHour);
-    console.log(locations[i].maxCustPerHour);
-    console.log(locations[i].avgCookiesPerCust);
+
+
+//Dom 
+
+let table = document.getElementById('table');
+//         console.log(parent);
+
+// let table = document.createElement('table');
+//      parent.appendChild('table');
+
+// header fun
+
+function makeHeader(){
+    let headerRow = document.createElement('tr');
+    table.appendChild(headerRow);
+
+    let firstTh = document.createElement('th');
+    headerRow.appendChild(firstTh);
+    firstTh.textContent = 'Name';
+
+    // print hours
+    for (let i = 0; i < hours.length; i++){
+        let thElement = document.createElement('th');
+        headerRow.appendChild(thElement);
+        thElement.textContent = hours[i];
+    }
+    let lastTh=document.createElement('th');
+    headerRow.appendChild(lastTh);
+    lastTh.textContent = 'Daily Location Total';
 }
+
+makeHeader();
+
+// table data
+
+location.prototype.render = function(){
+    let dataRow = document.createElement('tr');
+    table.appendChild(dataRow);
+}
+
+
+for (let i = 0; i < locations.length; i++) {
+    locations[i].calcCustPerHour();
+    locations[i].calcCookiesPerHour();
+    locations[i].render();
+}
+    
+console.log(locations);
