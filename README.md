@@ -25,7 +25,7 @@ Pat needs you to take a leading role in doing the design work and construction o
 
 ### Author: Maryam Al-Eisah
 
-### Problem Domain
+## Problem Domain
 Pat’s Salmon Cookies problem domain can be found here!
 
 Instructions
