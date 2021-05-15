@@ -1,77 +1,177 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-   
-    <title>Lab-06 Salmon cookies</title>
-     <link rel="stylesheet" href="CSS/reset.css"> 
-    <link rel="stylesheet" href="CSS/style.css">
+
+  <title>Lab-06 Salmon cookies</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: right;
+      
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: purple;
+    }
+  </style>
+
 </head>
+
 <body>
-<header>
+  <header>
     <img height="70" width="200" src="https://github.com/LTUC/amman-201d13/blob/main/class-08/lab-b/assets/salmon.png?raw=true">
+
     <h1>Pat's Salmon Cookies</h1>
-<nav>
-   
-       <a href="index.html"> Home</a>
-        <a href="sales.html">Sales</a>
-       <a href="index.html"> Locations</a>
-  
-</nav>
 
-</header>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="sales.html" title="Go To Sales">Sales</a></li>
+      <li><a href="#Locations" title="Go to Our Locations">Locations</a></li>
+      <li><a href="mailto:Pat@gmail.com" title="Contact The Owner">Contact Pat</a></li>
+    </ul>
 
-<main>
-    <p id="P1">Salmon cookies made with fish, salmon cookies are delish!😍<br>History of the Salmon Cookie! 
-Ghoul salmon shark marlin. Dusky grouper blue shark stargazer California smooth tongue oarfish, Australian grayling moray eel dartfish eel-goby snailfish orange spine unicorn fish Asian carps triple spine warty angler. <br>All locations are 🍪open Monday - Saturday from 6:00 AM - 7:00 PM🍪<br> all of us proud give you SALMON cookies, so welcome 👋 </p>
-  
-  
-  <h4>Our Products :</h4>
-    <img src=https://cdn.shopify.com/s/files/1/0400/6061/6749/products/Salmon_PotatoCookiesInformation.png alt="Salmon cookies">
+  </header>
 
-    <img src="https://i.pinimg.com/originals/ef/72/2d/ef722d6410685ee607533a93b5aeadec.jpg" alt="cookies-salmon">
-  
-  
-<img src="https://i.etsystatic.com/7531240/r/il/48d7d9/1505836356/il_570xN.1505836356_kkm2.jpg">
-
-  <img src="https://praycookblog.com/wp-content/uploads/2013/10/Mom-frosting-Cookies-500x381.jpg">
-  
-  
-  <img src="">
-  
-  
-  <img src="https://praycookblog.com/wp-content/uploads/2013/10/plateful-sugar-cookies.jpg">
-  
-  
-  <img src="https://praycookblog.com/wp-content/uploads/2013/10/salmon-cookies.jpg">
-  
-  
-  <img src="https://www.tupienso.com/image/data/fish4dogs/fish4dogs-salmon-cookies.jpg">
-  
-  
-  
-<br>
-</main>
-
-   <h2>Welcomed To visit our branches:</h2>
-     <h4> 🍪 Dubai :Khalifa Street,Dubai Mall,3th floor,UAE </h4> 
-     <h4> 🍪 Tokyo :Tokyo Street,Tokyo Mall,2th floor,Japan</h4>
-     <h4>🍪 Paris :Paris Street,Paris Mall,1th floor,France </h4>
-     <h4>🍪 Seattle: Washington Street, Seattle Mall,3th floor,USA </h4>
-       <h4> 🍪 Lima : Lima Street,Lima mall,5th floor, Peru</h4>    
-  
-  
-<footer>
-        
-    <h3> Follow us on:</h3>
+  <main>
     <br>
-        <a href=""> Facebook</a>
-        <a href=""> Twitter</a>
+    <p>Salmon cookies made with fish, salmon cookies are so delicious! 😍 there are many types of the Salmon Cookie!
+      Ghoul salmon shark marlin. Dusky grouper blue shark stargazer California smooth tongue oarfish, Australian grayling moray eel dartfish eel-goby snailfish orange spine unicorn fish Asian carps triple spine warty angler. </p>
+    <br>
+    <p>All of us proud give you SALMON cookies, so welcome 👋 </p>
+    <br>
+
+    <h2>Days & Hours open :</h2>
+    <br>
+
+    <br>
+    <p class="p2">🍪open Monday - Saturday from 6:00 AM - 7:00 PM🍪</p>
+    <br>
+  </main>
+
+  <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+
+  <div class="gallery">
+    <a target="_blank" href="https://i.pinimg.com/originals/ef/72/2d/ef722d6410685ee607533a93b5aeadec.jpg">
+      <img src="https://i.pinimg.com/originals/ef/72/2d/ef722d6410685ee607533a93b5aeadec.jpg" alt="cookies-salmon" width="600" height="400">
+    </a>
+    <div class="desc">New Salamon Cookies with Coconut
     </div>
+  </div>
 
+  <div class="gallery">
+    <a target="_blank" href="https://i.etsystatic.com/7531240/r/il/48d7d9/1505836356/il_570xN.1505836356_kkm2.jpg">
+      <img src="https://i.etsystatic.com/7531240/r/il/48d7d9/1505836356/il_570xN.1505836356_kkm2.jpg" alt="Salamon " width="600" height="400">
+    </a>
+    <div class="desc">New Salamon Cookies with Vanilla
+    </div>
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="https://praycookblog.com/wp-content/uploads/2013/10/Mom-frosting-Cookies-500x381.jpg">
+      <img src="https://praycookblog.com/wp-content/uploads/2013/10/Mom-frosting-Cookies-500x381.jpg" alt="salamon" width="600" height="400">
+    </a>
+    <div class="desc">We make our Salomon Cookies with love
+    </div>
+  </div>
 
- </footer>
+  <div class="gallery">
+    <a target="_blank" href="https://praycookblog.com/wp-content/uploads/2013/10/plateful-sugar-cookies.jpg">
+      <img src="https://praycookblog.com/wp-content/uploads/2013/10/plateful-sugar-cookies.jpg" alt="salamon" width="600" height="400">
+    </a>
+    <div class="desc">A multi-flavored Salmon Cookies</div>
+  </div>
 
+  <div class="gallery">
+    <a target="_blank" href="https://praycookblog.com/wp-content/uploads/2013/10/salmon-cookies.jpg">
+      <img src="https://praycookblog.com/wp-content/uploads/2013/10/salmon-cookies.jpg" alt="salmon" width="600" height="400">
+    </a>
+    <div class="desc">Strawberry cream Salmon Cookies
+    </div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="https://www.tupienso.com/image/data/fish4dogs/fish4dogs-salmon-cookies.jpg">
+      <img src="https://www.tupienso.com/image/data/fish4dogs/fish4dogs-salmon-cookies.jpg" alt="salmon" width="600" height="400">
+
+    </a>
+    <div class="desc">New salmon Cookies are calorie-free</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="https://cdn.shopify.com/s/files/1/0400/6061/6749/products/Salmon_PotatoCookiesInformation.png">
+      <img src=https://cdn.shopify.com/s/files/1/0400/6061/6749/products/Salmon_PotatoCookiesInformation.png alt="Salmon cookies" width="100%" height="1000">
+
+    </a>
+    <div class="desc"> Delicious cookies at the best prices
+    </div>
+  </div>
+  <br>
+
+  <img src="https://www.fish4dogs.com/pub/media/catalog/product/cache/a44b7b094be70b247af8e64a00f97643/s/a/salmon-cookies_1.jpg" alt="Salmon cookies">
+
+  <h2>Welcomed To visit our branches:</h2>
+  <br>
+  <p id="Locations">
+  <h4> 🍪 Dubai &#8594;Khalifa Street,Dubai Mall,3th floor,UAE </h4>
+  <h4> 🍪 Tokyo &#8594;Tokyo Street,Tokyo Mall,2th floor,Japan</h4>
+  <h4>🍪 Paris  &#8594;Paris Street,Paris Mall,1th floor,France </h4>
+  <h4>🍪Seattle &#8594;Washington Street, Seattle Mall,3th floor,USA </h4>
+  <h4> 🍪 Lima  &#8594;Lima Street,Lima mall,5th floor, Peru</h4>
+  </p>
+  <br>
+
+  <footer>
+    <br>
+    <p><mark>Follow us on:</mark></p>
+    <br>
+    <a href="https://web.facebook.com" target="_blank" title="Go To Facebook"> Facebook</a>
+    <a href="https://twitter.com" target="_blank" title="Go To Twitter"> Twitter</a>
+
+  </footer>
 
 </body>
 
