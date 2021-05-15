@@ -68,7 +68,7 @@ SalmonCookies.prototype.calcookiesPerHour = function () {
   }
 
   // cal total cookies
-}
+};
 
 //Salmon cookies prototype fun
 
@@ -178,26 +178,52 @@ function makeFooter() {
   for (let i = 0; i < hours.length; i++) {
     let totalCookiesPerHour = 0;
 
-  for (let j = 0; j < locations.length; ++j) {
-        totalCookiesPerHour += locations[j].cookiesPerHour[i];
+    for (let j = 0; j < locations.length; ++j) {
+      totalCookiesPerHour += locations[j].cookiesPerHour[i];
+    }
 
+    let footerThtotal = document.createElement("th");
+    footerRow.appendChild(footerThtotal);
+    footerThtotal.textContent = totalCookiesPerHour;
+    tot += totalCookiesPerHour;
 
+    // console.log('total of total ',tot);
   }
 
-let footerThtotal = document.createElement('th');
-footerRow.appendChild(footerThtotal);
-footerThtotal.textContent=totalCookiesPerHour;
-tot += totalCookiesPerHour;
-
-
-
-}
-
-console.log(tot);
+  console.log(tot);
+  let totalTh = document.createElement("th");
+  footerRow.appendChild(totalTh);
+  totalTh.textContent = tot;
 }
 
 // print hours
 
-
 makeFooter();
 
+//--------------Form----------------
+
+// let salamonCookiesForm = document.getElementById('salamonCookiesForm');
+// salamonCookiesForm.addEventListener('submit', submitter);
+
+// function submitter(event) {
+//     event.preventDefault();
+//       let locationName = event.target.locationName.value;
+
+//       let minumumNumberOfCustomerPerHour
+//  = event.target.minCustPerHour.value;
+
+//       let maximumNumberOfCustomerPerHour
+//  = event.target.maxCustPerHour.value;
+
+//       let averagCookiesPerCustomer:
+//  = event.target.avgCookiesPerCost.value;
+
+//   let addedBranch = new SalmonCookies(locationName, minCustPerHour, maxCustPerHour, avgCookiesPerCust);
+//   locations.push(addedBranch);
+
+//   addedBranch.totalCookiesPerHour();
+//   addedBranch.totalCookiesPerDay();
+//   addedBranch.render();
+
+// addedBranch.cookiesPerHour();
+//   addedBranch.render();
