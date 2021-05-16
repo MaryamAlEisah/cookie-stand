@@ -164,9 +164,9 @@ for (let i = 0; i < locations.length; i++) {
 console.log(locations);
 
 // create fun for table footer
+let footerRow = document.createElement("tr");
 
 function makeFooter() {
-  let footerRow = document.createElement("tr");
   table.appendChild(footerRow);
 
   let firstTh = document.createElement("th");
@@ -202,28 +202,32 @@ makeFooter();
 
 //--------------Form----------------
 
-// let salamonCookiesForm = document.getElementById('salamonCookiesForm');
-// salamonCookiesForm.addEventListener('submit', submitter);
+let salamonCookiesForm = document.getElementById("salamonCookies");
+salamonCookiesForm.addEventListener("submit", submitter);
 
-// function submitter(event) {
-//     event.preventDefault();
-//       let locationName = event.target.locationName.value;
+function submitter(event) {
+  event.preventDefault();
+  let locationName = event.target.locationName.value;
 
-//       let minumumNumberOfCustomerPerHour
-//  = event.target.minCustPerHour.value;
+  let minumumNumberOfCustomerPerHour = event.target.minCustPerHour.value;
 
-//       let maximumNumberOfCustomerPerHour
-//  = event.target.maxCustPerHour.value;
+  let maximumNumberOfCustomerPerHour = event.target.maxCustPerHour.value;
 
-//       let averagCookiesPerCustomer:
-//  = event.target.avgCookiesPerCost.value;
+  let averagCookiesPerCustomer = event.target.avgCookiesPerCost.value;
 
-//   let addedBranch = new SalmonCookies(locationName, minCustPerHour, maxCustPerHour, avgCookiesPerCust);
-//   locations.push(addedBranch);
+  let addedBranch = new SalmonCookies(
+    locationName,
+    minumumNumberOfCustomerPerHour,
+    maximumNumberOfCustomerPerHour,
+    averagCookiesPerCustomer
+  );
+  // locations.push(addedBranch);
 
-//   addedBranch.totalCookiesPerHour();
-//   addedBranch.totalCookiesPerDay();
-//   addedBranch.render();
+  // addedBranch.totalCookiesPerHour();
+  // addedBranch.totalCookiesPerDay();
+  addedBranch.render();
+  footerRow.innerHTML = "";
+  makeFooter();
 
-// addedBranch.cookiesPerHour();
-//   addedBranch.render();
+  // addedBranch.cookiesPerHour();
+}
